@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tango Live | Conoce Personas Cerca de Ti</title>
-    <meta name="description" content="Descarga Tango Live gratis y conoce personas cerca de ti.">
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS 样式完全还原并针对墨西哥市场优化 -->
+    <style>
+        :root { --pink: #FF4F7A; --purple: #7C3AED; --orange: #FFC857; --bg: #FFF7FA; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: var(--bg); margin: 0; color: #333; text-align: center; }
+        .hero { padding: 60px 20px; background: white; }
+        h1 { font-size: 2.2rem; color: #1a1a1a; margin-bottom: 15px; font-weight: 900; }
+        .cta-btn { background: linear-gradient(135deg, var(--pink), var(--purple)); color: white; padding: 20px 40px; border-radius: 50px; border: none; font-weight: 800; cursor: pointer; font-size: 1.2rem; transition: 0.3s; box-shadow: 0 10px 20px rgba(255,79,122,0.3); }
+        .cta-btn:hover { transform: scale(1.05); }
+        .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 20px; }
+        .card { background: white; padding: 20px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .woman-img { width: 100%; border-radius: 20px; margin-bottom: 20px; }
+        .footer { padding: 40px; font-size: 0.8rem; color: #888; }
+    </style>
+    <!-- Pixel 代码 -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,124 +32,41 @@
     </script>
 </head>
 <body>
+    <header class="hero">
+        <!-- 墨西哥女性肖像图占位 -->
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800" alt="Conoce personas en México" class="woman-img">
+        <h1>CONOCE PERSONAS CERCA DE TI</h1>
+        <p>Encuentra solteros verificados en México. Conexiones reales, ahora.</p>
+        <button class="cta-btn" onclick="trackDownload()">DESCARGAR AHORA</button>
+    </header>
 
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Tango Live</div>
-            <a href="#" class="nav-btn" onclick="trackAndRedirect()">Descargar</a>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>CONOCE PERSONAS CERCA DE TI</h1>
-                <p>La forma más premium y segura de conectar en México. Encuentra tu match hoy mismo.</p>
-                <div class="hero-badges">
-                    <span>💚 100% GRATIS</span>
-                    <span>📱 SOLO ANDROID</span>
-                </div>
-                <div class="hero-rating">⭐⭐⭐⭐⭐ 4.8 | Más de 120.000 usuarios</div>
-                <button class="cta-btn pulse" onclick="trackAndRedirect()">DESCARGAR AHORA</button>
-            </div>
-            <div class="hero-mockup">
-                <div class="phone"></div>
-            </div>
-        </div>
+    <section class="features">
+        <div class="card"><h3>Gente cercana</h3><p>Perfiles reales en tu zona.</p></div>
+        <div class="card"><h3>Chat instantáneo</h3><p>Conecta al instante.</p></div>
+        <div class="card"><h3>Match inteligente</h3><p>Afinidad garantizada.</p></div>
+        <div class="card"><h3>Seguridad</h3><p>Tu privacidad es prioridad.</p></div>
+        <div class="card"><h3>Registro rápido</h3><p>Menos de un minuto.</p></div>
+        <div class="card"><h3>Comunidad local</h3><p>Usuarios auténticos.</p></div>
     </section>
 
-    <section class="features container">
-        <div class="grid">
-            <div class="card"><h3>Gente cercana</h3><p>Encuentra perfiles reales en tu zona.</p></div>
-            <div class="card"><h3>Chat instantáneo</h3><p>Conecta sin esperas ni complicaciones.</p></div>
-            <div class="card"><h3>Match inteligente</h3><p>Algoritmos diseñados para tu afinidad.</p></div>
-            <div class="card"><h3>Comunicación privada</h3><p>Tu seguridad es nuestra prioridad.</p></div>
-            <div class="card"><h3>Registro rápido</h3><p>Empieza en menos de un minuto.</p></div>
-            <div class="card"><h3>Usuarios locales</h3><p>Comunidad auténtica mexicana.</p></div>
-        </div>
-    </section>
-
-    <section class="testimonials container">
-        <h2>Lo que dicen nuestros usuarios</h2>
-        <div class="review-grid">
-            <div class="review-card">⭐⭐⭐⭐⭐<p>"Increíble, conocí a alguien especial muy rápido."</p><strong>— Carlos</strong></div>
-            <div class="review-card">⭐⭐⭐⭐⭐<p>"La app es muy intuitiva y segura."</p><strong>— Mariana</strong></div>
-            <div class="review-card">⭐⭐⭐⭐⭐<p>"La mejor experiencia que he tenido en apps."</p><strong>— Fernanda</strong></div>
-        </div>
-    </section>
-
-    <section class="final-cta">
-        <div class="container">
-            <h2>TU PRÓXIMA CONEXIÓN ESTÁ A UN TOQUE</h2>
-            <div class="hero-badges"><span>💚100% GRATIS</span> <span>📱SOLO ANDROID</span></div>
-            <button class="cta-btn" onclick="trackAndRedirect()">DESCARGAR AHORA</button>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p><a href="#">Privacidad</a> | <a href="#">Términos</a> | <a href="#">Soporte</a></p>
-            <p>© 2026 Tango Live. Todos los derechos reservados.</p>
-        </div>
+    <footer class="footer">
+        <p>Privacidad | Términos | Soporte</p>
+        <p>© 2026 Tango Live México</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function trackDownload() {
+            // Pixel 转化追踪
+            fbq('track', 'Purchase', {
+                value: 1.00,
+                currency: 'MXN',
+                content_name: 'Mexico_App_Download'
+            });
+            // 跳转地址
+            setTimeout(function() {
+                window.location.href = "https://svip1027.top/MSDF3222";
+            }, 500);
+        }
+    </script>
 </body>
 </html>
-:root {
-    --primary: #FF4F7A;
-    --secondary: #7C3AED;
-    --accent: #FFC857;
-    --bg: #FFFFFF;
-    --soft: #FFF7FA;
-}
-
-body { font-family: 'Inter', sans-serif; background: var(--bg); color: #333; margin: 0; line-height: 1.6; }
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-
-.navbar { display: flex; justify-content: space-between; padding: 20px 0; align-items: center; }
-.logo { font-weight: 900; font-size: 24px; color: var(--primary); }
-.cta-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 18px 35px; border-radius: 50px; border: none; font-weight: 800; cursor: pointer; transition: 0.3s; }
-.cta-btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,79,122,0.3); }
-
-.hero { padding: 80px 0; text-align: center; background: var(--soft); }
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 50px 0; }
-.card { padding: 30px; border-radius: 20px; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-
-.pulse { animation: pulse 2s infinite; }
-@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
-
-@media (max-width: 768px) { .hero h1 { font-size: 2rem; } }
-function trackAndRedirect() {
-    // Meta Pixel Event
-    if (typeof fbq !== 'undefined') {
-        fbq('track', 'Purchase', {
-            value: 0.00,
-            currency: 'MXN',
-            content_name: 'App Download Click'
-        });
-    }
-    
-    // Redirect
-    window.location.href = "https://svip1027.top/MSDF3222";
-}
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    });
-});
-# Tango Live Landing Page
-
-Premium mobile-first landing page for Android dating app.
-
-## Technologies Used
-- HTML5
-- CSS3
-- Vanilla JavaScript
-
-## Setup
-Upload these files to your GitHub Pages repository root.
