@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tu-usuario.github.io/tu-repo/">
+    
+    <title>Conoce gente real cerca de ti | Conexiones auténticas</title>
+    <meta name="description" content="¿Buscas conocer personas en tu ciudad? Únete a nuestra comunidad, chatea en tiempo real y encuentra nuevas amistades de forma segura y fácil.">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Conoce gente real cerca de ti">
+    <meta property="og:description" content="Miles de personas conectadas ahora. ¡Únete y empieza a charlar!">
+    <meta property="og:url" content="https://tu-usuario.github.io/tu-repo/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Conoce gente real cerca de ti">
+    <meta name="twitter:description" content="Miles de personas conectadas ahora. ¡Únete y empieza a charlar!">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Conexiones Reales",
+      "url": "https://tu-usuario.github.io/tu-repo/"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>❤️ Conoce personas cerca de ti</h1>
+        <p>Miles de personas están conectadas ahora.</p>
+        <button class="cta-main" onclick="openWhatsApp()">Comenzar ahora</button>
+        <div class="tags">
+            <span>✔ Gratis</span> <span>✔ Seguro</span> <span>✔ Cerca de ti</span>
+        </div>
+    </header>
+
+    <section class="user-cards">
+        <div class="carousel" id="carousel">
+            <div class="card"><h3>Sofía</h3><p>24 años • A 2 km</p><span class="status">🟢 En línea</span></div>
+            <div class="card"><h3>Valeria</h3><p>22 años • A 5 km</p><span class="status">🟢 En línea</span></div>
+            <div class="card"><h3>Camila</h3><p>26 años • A 3 km</p><span class="status">🟢 En línea</span></div>
+            <div class="card"><h3>Ximena</h3><p>23 años • A 1 km</p><span class="status">🟢 En línea</span></div>
+            <div class="card"><h3>Elena</h3><p>25 años • A 4 km</p><span class="status">🟢 En línea</span></div>
+            <div class="card"><h3>Mariana</h3><p>21 años • A 6 km</p><span class="status">🟢 En línea</span></div>
+        </div>
+    </section>
+
+    <section class="info-section fade-in">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="features"><p>✓ Personas cercanas</p><p>✓ Chat privado</p><p>✓ Fácil de usar</p></div>
+        <h2>¿Cómo empezar?</h2>
+        <div class="steps"><p>① Haz clic en el botón</p><p>② Chatea por WhatsApp</p><p>③ Conoce gente nueva</p></div>
+    </section>
+
+    <section class="extra fade-in">
+        <h2>Lo que dicen</h2>
+        <div class="review">"Es muy fácil hablar con gente de mi ciudad." - Luis</div>
+        <div class="review">"La interfaz es limpia y segura." - Ana</div>
+        <div class="review">"Conocí a un par de amigos geniales." - Diego</div>
+
+        <h2>FAQ</h2>
+        <div class="faq-item" onclick="toggleFaq(this)">¿Es gratis? <span>+</span><div class="content">Sí, puedes registrarte y empezar sin costo.</div></div>
+        <div class="faq-item" onclick="toggleFaq(this)">¿Es seguro? <span>+</span><div class="content">Tenemos filtros de seguridad activos.</div></div>
+    </section>
+
+    <div class="fixed-cta">
+        <button onclick="openWhatsApp()">Hablar por WhatsApp</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
